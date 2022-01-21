@@ -51,4 +51,4 @@ flake8 is pretty light on configuration. We just tell tox to run it in `tox.ini`
 
 ---
 
-![Tests](https://github.com/$USER/$PROJECT/actions/workflows/tests.yaml/badge.svg)
+![Tests](https://github.com/jph425/py_template/actions/workflows/tests.yaml/badge.svg)
