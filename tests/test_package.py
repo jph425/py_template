@@ -1,4 +1,4 @@
-from package_name import symbol
+from package_name import hi
 import pytest
 
 def test_pkg():
