@@ -2,13 +2,11 @@
 
 def hi(a, b):
     # intentional pep8 violations to make flake8 say things. (too many blank lines)
-
-
     return a > b
 
 
 # intentional mypy error
-#def staticlytyped(a: int, b: int) -> bool:
+# def staticlytyped(a: int, b: int) -> bool:
 #    return a + b
 
 
