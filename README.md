@@ -42,7 +42,7 @@ The packages needed to run these processes, but NOT needed for running this pack
 
 `setup.cfg` includes \[options.package_data] to specify the type hinting file (an empty file at creation, this template uses `src/py.typed`)
 
-`pyproject.toml` includes \[tool.mypy] to configure mypy features and configuration. See mypy docs for full details.
+`pyproject.toml` includes \[tool.mypy] to configure mypy features and configuration. See mypy docs for full details. (note that mypy looks in several places for configuration, searching in order: `mypy.ini`, `.mypy.ini`, `pyproject.toml`, `setup.cfg`, `$CDG_CONFIG_HOME/mypy/config`, `~/.config/mypy/config`, `~/.mypy.ini`)
 
 ### 2.3 tox testing matrix
 [docs](https://tox.wiki/en/latest/)
