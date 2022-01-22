@@ -30,3 +30,10 @@ no_implicit_reexport = true
 [[tool.mypy.overrides]]
 module = 'PyYAML'
 disallow_untyped_defs = true
+
+[[tool.mypy.overrides]]
+# any 3rd party unhinted modules
+module = [
+    'pkg_resources'
+]
+ignore_missing_imports = true
