@@ -14,6 +14,7 @@ pretty = true
 color_output = true
 error_summary = true
 lineprecision_report = "mypyCoverageReport"
+linecount_report = "mypyCoverageReport"
 check_untyped_defs = true
 disallow_any_generics = true
 ignore_missing_imports = true
