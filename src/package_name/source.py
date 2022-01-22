@@ -1,7 +1,6 @@
 #!/bin/env python
 
 def hi(a, b):
-    # intentional pep8 violations to make flake8 say things. (too many blank lines)
     return a > b
 
 
