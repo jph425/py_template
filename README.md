@@ -11,7 +11,9 @@ A template python project. Pre-configured for testing and building packages.
 `pyproject.toml` build configuration metadata.
 
 ### 1.1 Building and Testing
- - Build the project locally with `setup -e .`
+ - Build the project locally for development with `pip install -e .`
+
+ - Build for release with `python setup.py bdist_wheel` and/or `python setup.py sdist`
 
  - Run the linter with `flake8 src`
 
@@ -19,7 +21,7 @@ A template python project. Pre-configured for testing and building packages.
 
  - Run the tests with `pytest .`
 
- - Run the tests, linter, and type-checker with `tox`
+ - Run the tests, linter, and type-checker with `tox`. It might be useful to use `tox --parallel auto` to speed up this process.
 
 ## 2. Testing and Automation
 We setup pytest, mypy, and tox here. Github actions are also configured to automatically run tests on push and pull-request.
