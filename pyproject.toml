@@ -2,9 +2,9 @@
 requires = ["setuptools>=42.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
-[tools.pytest.ini_options]
-addopts = "--cov=project_name"
-test_paths = [
+[tool.pytest.ini_options]
+addopts = "--cov=package_name"
+testpaths = [
     "tests",
 ]
 
