@@ -4,11 +4,22 @@ A template python project. Pre-configured for testing and building packages.
 ## 1. Project Setup
 `requirements.txt` lists all imported dependencies needed to build and run the package.
 
-`setup.cfg` lists package information used to builds the package. Use `pip install -e .` to build.
+`setup.cfg` lists package information used to builds the package.
 
 `setup.py` vestigial at this point, calls `setuptools.setup()`. Otherwise, nothing here.
 
 `pyproject.toml` build configuration metadata.
+
+### 1.1 Building and Testing
+ - Build the project locally with `setup -e .`
+
+ - Run the linter with `flake8 src`
+
+ - Run the type-checker with `mypy src`
+
+ - Run the tests with `pytest .`
+
+ - Run the tests, linter, and type-checker with `tox`
 
 ## 2. Testing and Automation
 We setup pytest, mypy, and tox here. Github actions are also configured to automatically run tests on push and pull-request.
