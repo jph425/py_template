@@ -5,7 +5,7 @@ on:
   - pull_request
 
 jobs:
-  test:
+  tox_test_and_hygeine_suite:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
