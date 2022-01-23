@@ -12,6 +12,8 @@ A template python project. Pre-configured for testing and building packages.
 
 `pyproject.toml` build configuration metadata for LOTS of these automated tools.
 
+`Makefile` is a basic makefile that includes rules for creating a venv, creating a development environment, testing, creating docs (currently no doc system is included in this template), and cleaning up. No rules are included for generating a wheel for submission to PyPI either.
+
 ### 1.1 Building and Testing
  - Build the project locally for development with `pip install -e .`
 

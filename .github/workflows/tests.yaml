@@ -5,11 +5,11 @@ on:
   - pull_request
 
 jobs:
-  test:
+  tox_test_and_hygeine_suite:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest, macos-latest, 'macos-11']
         python-version: ['3.8', '3.9']
   
     steps:
