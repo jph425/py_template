@@ -25,6 +25,7 @@ install: $(SRC_PY) $(CONFIG) $(VENV)/bin/activate
 	@echo "=== INSTALLING PACKAGE FOR DEVELOPMENT ==="
 	@echo "  - the package will be installed in the venv at $(VENV)"
 	@echo "  - the package will be installed in editable mode"
+	$(PIP) install --upgrade pip
 	$(PIP) install -e .
 
 
@@ -32,6 +33,7 @@ install: $(SRC_PY) $(CONFIG) $(VENV)/bin/activate
 $(VENV)/bin/activate: $(REQ)
 	@echo "=== CREATING VENV ==="
 	python3 -m venv venv
+	source $(VENV)/bin/activate
 	$(PIP) install -r requirements.txt
 	$(PIP) install -r requirements_dev.txt
 
