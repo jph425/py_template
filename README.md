@@ -1,6 +1,8 @@
 # py_template
 A template python project. Pre-configured for testing and building packages.
 
+![Visualization of the codebase](./diagram.svg)
+
 ## 1. Project Setup
 `requirements.txt` lists all imported dependencies needed to build and run the package. It's good form to be very specific with versions here.
 
